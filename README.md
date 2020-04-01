@@ -7,6 +7,7 @@ Profil anlegen:
   - Name / Herkunft
   - Freunde einladen -> befüllen Profil
   - Wo suche ich? Altersspanne? Hobbys? 
+  - Auf jeden fall Bild schon von anfang an hochladen (Pedos) 
 
 Memos:
   - Eine Memo über sich selbst, mit Fragen die man selber beantwortet.
