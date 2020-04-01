@@ -4,9 +4,9 @@
 Login:
 
 Profil anlegen:
-  - Name / Herkunft
+  - Name / Standort / Alter
   - Freunde einladen -> befüllen Profil
-  - Wo suche ich? Altersspanne? Hobbys? 
+  - Wo suche ich (Wo)? Altersspanne? Hobbys? 
   - Auf jeden fall Bild schon von anfang an hochladen (Pedos) 
 
 Memos:
