@@ -1,5 +1,10 @@
 # You
 
+# Aktueller Stand der App kann unter dem folgenden Link betrachtet werden 
+https://expo.io/@chrisjb/YouFrontend
+
+Dazu einfach die App 'Expo' aus dem Play Store installieren und den QR-Code abscannen (Mit IPhones geht es leider nicht per abscannen des QR-Codes, da funktioniert das irgendwie anders)
+
 #Must-Haves
 Login:
 
