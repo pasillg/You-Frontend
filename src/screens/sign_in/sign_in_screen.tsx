@@ -2,9 +2,15 @@ import React, { Component } from 'react'
 import { View, TextInput, StyleSheet } from 'react-native'
 import Constants from 'expo-constants'
 import { Button } from '../../components/button'
+import { NavigationProp } from '@react-navigation/native'
+import { _Routes } from '../../navigation/_Routes'
 
-export class SignInScreen extends Component {
-  constructor(props: any){
+interface Props {
+  navigation: NavigationProp<any>
+}
+
+export class SignInScreen extends Component<Props> {
+  constructor(props: Props){
     super(props)
 
     // We need to bind "this" in order to access this for setState within the functions
@@ -21,8 +27,8 @@ export class SignInScreen extends Component {
     alert('eingeloggt')
   }
 
-  onPressSignUp(){
-    alert('registrieren')
+  onPressSignUp(navigation: NavigationProp<any>){
+    navigation.navigate(_Routes.signUp)
   }
 
   onChangeUsername(text: string){
@@ -38,6 +44,10 @@ export class SignInScreen extends Component {
   }
 
   render(){
+    // We need to extract navigation prop over here and pass it to the functions that need it
+    // don't know why, but it doesn't work when you extract it within the function
+    const { navigation } = this.props
+
     return (
       <View style={styles.root}>
         {/* We use this container to center the content vertically and horizontally */}
@@ -58,7 +68,7 @@ export class SignInScreen extends Component {
 
           <View style={{width: '40%'}}>
             <Button style={[styles.button, { marginBottom: 12 }]} onPress={this.onPressSignIn}>Anmelden</Button>
-            <Button style={[styles.button, { marginBottom: 20, }]} onPress={this.onPressSignUp}>Registrieren</Button>           
+            <Button style={[styles.button, { marginBottom: 20, }]} onPress={() => this.onPressSignUp(navigation)}>Registrieren</Button>           
           </View>
         </View> 
       </View>
